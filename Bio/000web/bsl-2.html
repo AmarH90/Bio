@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html leng="eg">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width-divaice-width, initial-scale-1.0">
+        <title>Biohazard</title>
+        <link rel="apple-touch-icon" sizes="100x100" href="./favicon_bio/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon_bio/favicon-16x16.png">
+        <link rel="manifest" href="favicon_bio/site.webmanifest">
+        <link rel="stylesheet" href="stayle.css"> 
+    </head>
+    <header>
+        <div class="nav">
+            <img class="logo_1" src="./logo_2.jpg">
+            <a href="index.html">Biohazard</a></li>
+            <a href="bsl-1.html">BSL-1</a></li>
+            <a href="bsl-3.html">BSL-3</a></li>
+            <a href="bsl-4.html">BSL-4</a></li>
+            <a href="#" language='english' class="active">English</a></li>
+            <a href="#" language='bosanski'>Bosnian</a></li>
+            <a href="#" language='german'>German</a></li>      
+        </div>
+    </header>
+    <body>
+        <div class="up_text">
+            <p>Biohazard site BSL-2</p>
+        </div>
+        <div class="box1">
+            <h2 class="up_text2">BSL-2</h2>
+            <p class="description"> In addition to BSL-1 considerations, BSL-2 laboratories have the following containment requirements: <br> Laboratory practices  <br> Access to the laboratory is restricted when work is being conducted. <br> Safety equipment <br> Appropriate personal protective equipment (PPE) A is worn, including lab coats and gloves. Eye protection and face shields can also be worn, as needed.
+                All procedures that can cause infection from aerosols or splashes are performed within a biological safety cabinet (BSC)B.
+                An autoclave or an alternative method of decontamination is available for proper disposals. <br> Facility construction <br> The laboratory has self-closing doors.
+                A sink and eyewash are readily available. <br> Biohazard Level and Significance  <br>Biohazard Level 2 usually involves microorganisms that are responsible for mild infections in humans and are often difficult to contract via aerosolized particles, like hepatitis A, B, and C, Lyme disease, Salmonella, measles, mumps, HIV, and dengue. Laboratory personnel can carry out diagnostic tests on the specimens but need to wear gloves, facial protection, and a gown. Additionally, standard precautions at this level should be applied when handling clinical samples from the current outbreak investigations of acute respiratory distress syndrome (ARDS) caused by the Coronavirus Disease 2019 (COVID-19). 
+               
+            </p>
+
+        </div>
+        <script>
+            const langEl = document.querySelector('.nav');
+            const link = document.querySelectorAll('a');
+            const descriptionEl = document.querySelector('.description');
+            link.forEach(el => {
+              el.addEventListener('click', () => {
+                langEl.querySelector('.active').classList.remove('active');
+                el.classList.add('active');
+                const attr = el.getAttribute('language');
+                descriptionEl.textContent = data[attr].description;
+              });
+            });
+            
+            var data = {
+                "english": 
+                {
+                  
+                  "description": 
+                    "In addition to BSL-1 considerations, BSL-2 laboratories have the following containment requirements: Laboratory practices  Access to the laboratory is restricted when work is being conducted. Safety equipment  Appropriate personal protective equipment (PPE) A is worn, including lab coats and gloves. Eye protection and face shields can also be worn, as needed. All procedures that can cause infection from aerosols or splashes are performed within a biological safety cabinet (BSC)B. An autoclave or an alternative method of decontamination is available for proper disposals.  Facility construction  The laboratory has self-closing doors. A sink and eyewash are readily available.  Biohazard Level and Significance  Biohazard Level 2 usually involves microorganisms that are responsible for mild infections in humans and are often difficult to contract via aerosolized particles, like hepatitis A, B, and C, Lyme disease, Salmonella, measles, mumps, HIV, and dengue. Laboratory personnel can carry out diagnostic tests on the specimens but need to wear gloves, facial protection, and a gown. Additionally, standard precautions at this level should be applied when handling clinical samples from the current outbreak investigations of acute respiratory distress syndrome (ARDS) caused by the Coronavirus Disease 2019 (COVID-19)."
+                },
+                "bosanski": 
+                {
+                  
+                  "description": 
+                    "Pored razmatranja BSL-1, laboratorije BSL-2 imaju sljedeće zahtjeve za zadržavanje: Laboratorijske prakse   Pristup laboratoriji je ograničen kada se radi.  Sigurnosna oprema Nosi se odgovarajuća lična zaštitna oprema (PPE) A, uključujući laboratorijske mantile i rukavice. Po potrebi se mogu nositi i zaštita za oči i lice. Svi postupci koji mogu uzrokovati infekciju od aerosola ili prskanja izvode se unutar biološkog sigurnosnog kabineta (BSC)B. Dostupan je autoklav ili alternativni metod dekontaminacije za pravilno odlaganje. Izgradnja objekata Laboratorija ima samozatvarajuća vrata. Umivaonik i sredstvo za ispiranje očiju su lako dostupni.  Nivo i značaj biološke opasnosti Nivo biološke opasnosti 2 obično uključuje mikroorganizme koji su odgovorni za blage infekcije kod ljudi i često ih je teško zaraziti putem čestica u obliku aerosola, kao što su hepatitis A, B i C, lajmska bolest, salmonela, boginje, zaušnjaci, HIV i denga. Laboratorijsko osoblje može izvršiti dijagnostičke testove na uzorcima, ali mora nositi rukavice, zaštitu za lice i ogrtač. Osim toga, standardne mjere opreza na ovom nivou treba primijeniti pri rukovanju kliničkim uzorcima iz trenutnih istraživanja akutnog respiratornog distres sindroma (ARDS) uzrokovanog bolešću Coronavirusom 2019 (COVID-19)."
+                },
+                "german": 
+                {
+                  
+                  "description": 
+                    " Zusätzlich zu BSL-1-Überlegungen haben BSL-2-Labore die folgenden Sicherheitsanforderungen: Laborpraktiken Während der Arbeit ist der Zugang zum Labor eingeschränkt. Sicherheitsausrüstung  Geeignete persönliche Schutzausrüstung (PSA) A wird getragen, einschließlich Laborkittel und Handschuhe. Bei Bedarf können auch Augenschutz und Gesichtsschutz getragen werden. Alle Verfahren, die eine Infektion durch Aerosole oder Spritzer verursachen können, werden in einer biologischen Sicherheitswerkbank (BSC)B durchgeführt. Für die ordnungsgemäße Entsorgung steht ein Autoklav oder eine alternative Dekontaminationsmethode zur Verfügung.  Anlagenbau  Das Labor verfügt über selbstschließende Türen. Ein Waschbecken und eine Augenspülung sind leicht verfügbar.  Biogefährdungsgrad und Bedeutung  Biogefährdungsstufe 2 umfasst normalerweise Mikroorganismen, die für leichte Infektionen beim Menschen verantwortlich sind und oft schwer über aerosolisierte Partikel infiziert werden können, wie Hepatitis A, B und C, Lyme-Borreliose, Salmonellen, Masern, Mumps, HIV und Dengue-Fieber. Das Laborpersonal kann diagnostische Tests an den Proben durchführen, muss jedoch Handschuhe, Gesichtsschutz und einen Kittel tragen. Darüber hinaus sollten beim Umgang mit klinischen Proben aus den aktuellen Ausbruchsuntersuchungen des akuten Atemnotsyndroms (ARDS), das durch die Coronavirus-Krankheit 2019 (COVID-19) verursacht wurde, Standardvorkehrungen auf dieser Ebene angewendet werden."
+                },
+              }
+          </script>
+    </body>
+    <footer >
+        <p>This site is made by @AmarH for school mini-projects this page will be deactivated in 15 days.</p>
+      </footer>
+</html>

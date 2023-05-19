@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html leng="eg">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width-divaice-width, initial-scale-1.0">
+        <title>Biohazard</title>
+        <link rel="apple-touch-icon" sizes="100x100" href="./favicon_bio/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon_bio/favicon-16x16.png">
+        <link rel="manifest" href="favicon_bio/site.webmanifest">
+        <link rel="stylesheet" href="stayle.css"> 
+    </head>
+    <header>
+        <div class="nav">
+            <img class="logo_1" src="./logo_2.jpg">
+            <a href="index.html">Biohazard</a></li>
+            <a href="bsl-2.html">BSL-2</a></li>
+            <a href="bsl-3.html">BSL-3</a></li>
+            <a href="bsl-4.html">BSL-4</a></li>
+            <a href="#" language='english' class="active">English</a></li>
+            <a href="#" language='bosanski'>Bosnian</a></li>
+            <a href="#" language='german'>German</a></li>     
+        </div>
+    </header>
+    <body>
+        <div class="up_text">
+            <p>Biohazard site BSL-1</p>
+        </div>
+        <div class="box1">
+            <h2 class="up_text2">BSL-1</h2>
+            <p class="description">If you work in a lab that is designated a BSL-1, the microbes there are not known to consistently cause disease in healthy adults and present minimal potential hazard to laboratorians and the environment. An example of a microbe that is typically worked with at a BSL-1 is a nonpathogenic strain of E. coli.<br>  Specific considerations for a BSL-1 laboratory include the following: <br>  Laboratory practices <br> Standard microbiological practices are followed.
+                Work can be performed on an open lab bench or table  <br> Safety equipment <br>  Personal protective equipmentB, (lab coats, gloves, eye protection) are worn as needed. <br>  Facility construction <br>  A sink must be available for hand washing.
+                The lab should have doors to separate the working space with the rest of the facility. <br> Biohazard Level and Significance <br> Biohazard Level 1 usually includes viruses and bacteria like Escherichia coli and chickenpox and many non-infectious bacteria. The level of precaution at this level is minimal and usually involves wearing a face mask and no close contact.
+                </p>
+
+        </div>
+
+        <script>
+            const langEl = document.querySelector('.nav');
+            const link = document.querySelectorAll('a');
+            const up_text3El = document.querySelector('.up_text2');
+            const descriptionEl = document.querySelector('.description');
+        
+            link.forEach(el => {
+              el.addEventListener('click', () => {
+                langEl.querySelector('.active').classList.remove('active');
+                el.classList.add('active');
+        
+                const attr = el.getAttribute('language');
+        
+                up_text3El.textContent = data[attr].up_text3;
+                descriptionEl.textContent = data[attr].description;
+              });
+            });
+            
+            var data = {
+                "english": 
+                {
+                  "up_text2": "BSL-1",
+                  "description": 
+                    "If you work in a lab that is designated a BSL-1, the microbes there are not known to consistently cause disease in healthy adults and present minimal potential hazard to laboratorians and the environment. An example of a microbe that is typically worked with at a BSL-1 is a nonpathogenic strain of E. coli Specific considerations for a BSL-1 laboratory include the following Laboratory practices Standard microbiological practices are followed. Work can be performed on an open lab bench or table Safety equipment Personal protective equipmentB, (lab coats, gloves, eye protection) are worn as needed. Facility construction  A sink must be available for hand washing. The lab should have doors to separate the working space with the rest of the facility. Biohazard Level and Significance  Biohazard Level 1 usually includes viruses and bacteria like Escherichia coli and chickenpox and many non-infectious bacteria. The level of precaution at this level is minimal and usually involves wearing a face mask and no close contact"
+                },
+                "bosanski": 
+                {
+                  "up_text2": "BSL-1",
+                  "description": 
+                    "Ako radite u laboratoriji koja je označena kao BSL-1, nije poznato da tamošnji mikrobi dosljedno izazivaju bolesti kod zdravih odraslih osoba i predstavljaju minimalnu potencijalnu opasnost za laboratorije i okoliš. Primjer mikroba s kojim se obično radi na BSL-1 je nepatogeni soj E. coli. Posebna razmatranja za laboratoriju BSL-1 uključuju sljedeće:  Laboratorijske prakse Pridržavaju se standardne mikrobiološke prakse. Rad se može izvoditi na otvorenom laboratorijskom stolu ili stolu  Sigurnosna oprema  Lična zaštitna oprema B, (laboratorijski mantili, rukavice, zaštita za oči) se nosi po potrebi. Izgradnja objekta  Umivaonik mora biti dostupan za pranje ruku. Laboratorija treba da ima vrata koja odvajaju radni prostor od ostatka objekta.  Nivo i značaj biološke opasnosti  Nivo biološke opasnosti 1 obično uključuje viruse i bakterije kao što su Escherichia coli i vodene kozice i mnoge neinfektivne bakterije. Nivo predostrožnosti na ovom nivou je minimalan i obično uključuje nošenje maske za lice i bez bliskog kontakta"
+                },
+                "german": 
+                {
+                  "up_text2": "BSL-1",
+                  "description": 
+                    "Wenn Sie in einem Labor arbeiten, das als BSL-1 gekennzeichnet ist, ist nicht bekannt, dass die dortigen Mikroben bei gesunden Erwachsenen durchweg Krankheiten verursachen und eine minimale potenzielle Gefahr für Laboranten und die Umwelt darstellen. Ein Beispiel für eine Mikrobe, mit der typischerweise an einer BSL-1 gearbeitet wird, ist ein nicht-pathogener Stamm von E. coli. Spezifische Überlegungen für ein BSL-1-Labor umfassen Folgendes:  Laborpraktiken  Es werden mikrobiologische Standardpraktiken befolgt. Arbeiten können auf einem offenen Labortisch oder Tisch durchgeführt werden   Sicherheitsausrüstung  Persönliche Schutzausrüstung (Laborkittel, Handschuhe, Augenschutz) wird nach Bedarf getragen.  Anlagenbau  Zum Händewaschen muss ein Waschbecken vorhanden sein. Das Labor sollte Türen haben, um den Arbeitsraum vom Rest der Einrichtung zu trennen.  Biogefährdungsgrad und Bedeutung  Biohazard Level 1 umfasst normalerweise Viren und Bakterien wie Escherichia coli und Windpocken sowie viele nicht infektiöse Bakterien. Das Maß an Vorsichtsmaßnahmen auf dieser Ebene ist minimal und beinhaltet normalerweise das Tragen einer Gesichtsmaske und keinen engen Kontakt"
+                },
+              }
+          </script>
+    </body>
+    <footer >
+        <p>This site is made by @AmarH for school mini-projects this page will be deactivated in 15 days.</p>
+      </footer>
+</html>

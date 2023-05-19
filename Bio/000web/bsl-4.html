@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head leng="eg">
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width-divaice-width, initial-scale-1.0">
+        <title>Biohazard</title>
+        <link rel="apple-touch-icon" sizes="100x100" href="./favicon_bio/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon_bio/favicon-16x16.png">
+        <link rel="manifest" href="favicon_bio/site.webmanifest">
+        <link rel="stylesheet" href="stayle.css"> 
+    </head>
+    <header>
+        <div class="nav">
+            <img class="logo_1" src="./logo_2.jpg">
+            <a href="index.html">Biohazard</a></li>
+            <a href="bsl-1.html">BSL-1</a></li>
+            <a href="bsl-2.html">BSL-2</a></li>
+            <a href="bsl-3.html">BSL-3</a></li>
+            <a href="#" language='english' class="active">English</a></li>
+            <a href="#" language='bosanski'>Bosnian</a></li>
+            <a href="#" language='german'>German</a></li>       
+        </div>
+    </header>
+    <body>
+        <div class="up_text">
+            <p>Biohazard site BSL-4</p>
+        </div>
+        <div class="box1">
+            <h2 class="up_text2">BSL-4</h2>
+            <p class="description">In addition to BSL-3 considerations, BSL-4 laboratories have the following containment requirements: <br> Laboratory practices <br>  Change clothing before entering.
+                Shower upon exiting.
+                Decontaminate all materials before exiting. <br>  Safety equipment <br> All work with the microbe must be performed within an appropriate Class III BSC , or by wearing a full body, air-supplied, positive pressure A suit. <br> Facility construction <br> The laboratory is in a separate building or in an isolated and restricted zone of the building.
+                The laboratory has dedicated supply and exhaust air, as well as vacuum lines and decontamination systems. <br> Biohazard Level and Significance  <br>Biohazard Level 4 usually includes dangerous viruses like Ebola, Marburg virus, Lassa fever, Bolivian hemorrhagic fever, and many other hemorrhagic viruses found in the tropics. Only specific persons can work with these viruses, and it requires them to wear a positive pressure personnel suit, with a segregated air supply. There is no treatment available for these viruses, and extreme isolation precautions are mandatory. The CDC has many recommendations on how to manage these viruses. There are no bacteria in this group. 
+            </p>
+        </div>
+
+        <script>
+            const langEl = document.querySelector('.nav');
+            const link = document.querySelectorAll('a');
+            const descriptionEl = document.querySelector('.description');
+            link.forEach(el => {
+              el.addEventListener('click', () => {
+                langEl.querySelector('.active').classList.remove('active');
+                el.classList.add('active');
+                const attr = el.getAttribute('language');
+                descriptionEl.textContent = data[attr].description;
+              });
+            });
+            
+            var data = {
+                "english": 
+                {
+                  
+                  "description": 
+                  "In addition to BSL-3 considerations, BSL-4 laboratories have the following containment requirements: Laboratory practices  Change clothing before entering. Shower upon exiting. Decontaminate all materials before exiting.  Safety equipment  All work with the microbe must be performed within an appropriate Class III BSC , or by wearing a full body, air-supplied, positive pressure A suit.   Facility construction  The laboratory is in a separate building or in an isolated and restricted zone of the building. The laboratory has dedicated supply and exhaust air, as well as vacuum lines and decontamination systems.  Biohazard Level and Significance  Biohazard Level 4 usually includes dangerous viruses like Ebola, Marburg virus, Lassa fever, Bolivian hemorrhagic fever, and many other hemorrhagic viruses found in the tropics. Only specific persons can work with these viruses, and it requires them to wear a positive pressure personnel suit, with a segregated air supply. There is no treatment available for these viruses, and extreme isolation precautions are mandatory. The CDC has many recommendations on how to manage these viruses. There are no bacteria in this group."
+                },
+                "bosanski": 
+                {
+                  
+                  "description": 
+                    "Pored razmatranja BSL-3, laboratorije BSL-4 imaju sljedeće zahtjeve za zadržavanje:  Laboratorijske praks    Promijenite odjeću prije ulaska. Tuširanje po izlasku. Dekontaminirajte sve materijale prije izlaska.    Sigurnosna oprema   Sav rad sa mikrobom mora se obavljati u okviru odgovarajuće klase III BSC, ili nošenjem odijela A sa pozitivnim pritiskom na cijelo tijelo, sa dovodom zraka.    Izgradnja objekta    Laboratorija se nalazi u posebnoj zgradi ili u izolovanoj i ograničenoj zoni zgrade. Laboratorija ima namenski dovodni i odvodni vazduh, kao i vakumske linije i sisteme za dekontaminaciju.   Nivo i značaj biološke opasnosti    Nivo biološke opasnosti 4 obično uključuje opasne viruse poput ebole, Marburg virusa, Lassa groznice, bolivijske hemoragične groznice i mnoge druge hemoragične viruse koji se nalaze u tropima. Samo određene osobe mogu raditi sa ovim virusima, a od njih je potrebno da nose odijelo za osoblje sa pozitivnim pritiskom, sa odvojenim dovodom zraka. Ne postoji dostupan tretman za ove viruse, a krajnje mjere izolacije su obavezne. CDC ima mnogo preporuka o tome kako upravljati ovim virusima. U ovoj grupi nema bakterija."
+                },
+                "german": 
+                {
+                  
+                  "description": 
+                    "Zusätzlich zu BSL-3-Überlegungen haben BSL-4-Labore die folgenden Sicherheitsanforderungen:  Laborpraktiken  Wechseln Sie die Kleidung vor dem Betreten. Beim Aussteigen duschen. Dekontaminieren Sie alle Materialien vor dem Verlassen.   Sicherheitsausrüstung    Alle Arbeiten mit der Mikrobe müssen innerhalb eines geeigneten BSC der Klasse III oder durch Tragen eines Ganzkörper-Überdruck-A-Anzugs mit Luftzufuhr durchgeführt werden.  Anlagenbau  Das Labor befindet sich in einem separaten Gebäude oder in einer isolierten und eingeschränkten Zone des Gebäudes. Das Labor verfügt über dedizierte Zu- und Abluft sowie Vakuumleitungen und Dekontaminationssysteme.    Biogefährdungsgrad und Bedeutung    Biohazard Level 4 umfasst normalerweise gefährliche Viren wie Ebola, Marburg-Virus, Lassa-Fieber, bolivianisches hämorrhagisches Fieber und viele andere hämorrhagische Viren, die in den Tropen vorkommen. Nur bestimmte Personen können mit diesen Viren arbeiten, und es erfordert, dass sie einen Überdruck-Personalanzug mit getrennter Luftzufuhr tragen. Es gibt keine Behandlung für diese Viren, und extreme Isolationsmaßnahmen sind zwingend erforderlich. Die CDC hat viele Empfehlungen zum Umgang mit diesen Viren. In dieser Gruppe gibt es keine Bakterien. "
+                },
+              }
+          </script>
+    </body>
+    <footer >
+        <p>This site is made by @AmarH for school mini-projects this page will be deactivated in 15 days.</p>
+      </footer>
+</html>

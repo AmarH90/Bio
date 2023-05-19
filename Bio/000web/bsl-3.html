@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head leng="eg">
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width-divaice-width, initial-scale-1.0">
+        <title>Biohazard</title>
+        <link rel="apple-touch-icon" sizes="100x100" href="./favicon_bio/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon_bio/favicon-16x16.png">
+        <link rel="manifest" href="favicon_bio/site.webmanifest">
+        <link rel="stylesheet" href="stayle.css"> 
+    </head>
+    <header>
+        <div class="nav">
+            <img class="logo_1" src="./logo_2.jpg">
+            <a href="index.html">Biohazard</a></li>
+            <a href="bsl-1.html">BSL-1</a></li>
+            <a href="bsl-2.html">BSL-2</a></li>
+            <a href="bsl-4.html">BSL-4</a></li>
+            <a href="#" language='english' class="active">English</a></li>
+            <a href="#" language='bosanski'>Bosnian</a></li>
+            <a href="#" language='german'>German</a></li>      
+        </div>
+    </header>
+    <body>
+        <div class="up_text">
+            <p>Biohazard site BSL-3</p>
+        </div>
+        <div class="box1">
+            <h2 class="up_text2">BSL-3</h2>
+            <p class="description">In addition to BSL-2 considerations, BSL-3 laboratories have the following containment requirements: <br> Laboratory practices <br>  Laboratorians are under medical surveillance and might receive immunizations for microbes they work with.
+                Access to the laboratory is restricted and controlled at all times. <br> Safety equipment <br>  Appropriate PPE must be worn, and respirators might be requiredA.
+                All work with microbes must be performed within an appropriate BSCB. <br>  Facility construction <br> A hands-free sink and eyewash are available near the exit.
+                Exhaust air cannot be recirculated, and the laboratory must have sustained directional airflow by drawing air into the laboratory from clean areas towards potentially contaminated areas.
+                Entrance to the lab is through two sets of self-closing and locking doorsC. <br> Biohazard Level and Significance  <br>Biohazard Level 3 includes microorganisms that can be fatal to humans but for which vaccines and other treatments are available. Aside from Mycobacterium tuberculosis, this grouping also includes anthrax, many types of viral encephalitis, hantavirus, Rift valley fever, malaria, Rocky Mountain spotted fever, and yellow fever. 
+
+
+            </p>
+
+        </div>
+        <script>
+            const langEl = document.querySelector('.nav');
+            const link = document.querySelectorAll('a');
+            const descriptionEl = document.querySelector('.description');
+            link.forEach(el => {
+              el.addEventListener('click', () => {
+                langEl.querySelector('.active').classList.remove('active');
+                el.classList.add('active');
+                const attr = el.getAttribute('language');
+                descriptionEl.textContent = data[attr].description;
+              });
+            });
+            
+            var data = {
+                "english": 
+                {
+                  
+                  "description": 
+                    "In addition to BSL-2 considerations, BSL-3 laboratories have the following containment requirements: Laboratory practices Laboratorians are under medical surveillance and might receive immunizations for microbes they work with. Access to the laboratory is restricted and controlled at all times. Safety equipment  Appropriate PPE must be worn, and respirators might be requiredA. All work with microbes must be performed within an appropriate BSCB.  Facility construction  A hands-free sink and eyewash are available near the exit. Exhaust air cannot be recirculated, and the laboratory must have sustained directional airflow by drawing air into the laboratory from clean areas towards potentially contaminated areas. Entrance to the lab is through two sets of self-closing and locking doorsC.  Biohazard Level and Significance   Biohazard Level 3 includes microorganisms that can be fatal to humans but for which vaccines and other treatments are available. Aside from Mycobacterium tuberculosis, this grouping also includes anthrax, many types of viral encephalitis, hantavirus, Rift valley fever, malaria, Rocky Mountain spotted fever, and yellow fever."
+                },
+                "bosanski": 
+                {
+                  
+                  "description": 
+                    " Pored razmatranja BSL-2, laboratorije BSL-3 imaju sljedeće zahtjeve za zadržavanje: Laboratorijske prakse  Laboratoriji su pod medicinskim nadzorom i mogli bi dobiti imunizaciju za mikrobe s kojima rade. Pristup laboratoriji je u svakom trenutku ograničen i kontrolisan. Sigurnosna oprema  Mora se nositi odgovarajuća osobna zaštitna oprema i možda će biti potrebni respiratoriA. Sav rad sa mikrobima mora se obavljati u okviru odgovarajućeg BSCB. Izgradnja objekata  Umivaonik bez ruku i sredstvo za ispiranje očiju su dostupni u blizini izlaza. Izduvni zrak se ne može recirkulirati, a laboratorija mora imati kontinuirano usmjereno strujanje zraka uvlačenjem zraka u laboratoriju iz čistih područja prema potencijalno kontaminiranim područjima. Ulaz u laboratoriju je kroz dva seta samozatvarajućih i zaključavajućih vrataC. Nivo i značaj biološke opasnosti  Nivo biološke opasnosti 3 uključuje mikroorganizme koji mogu biti fatalni za ljude, ali za koje su dostupne vakcine i drugi tretmani. Osim Mycobacterium tuberculosis, ova grupa uključuje i antraks, mnoge vrste virusnog encefalitisa, hantavirus, groznicu Rift doline, malariju, pjegavu groznicu Rocky Mountaina i žutu groznicu."
+                },
+                "german": 
+                {
+                  
+                  "description": 
+                    " Zusätzlich zu BSL-2-Überlegungen haben BSL-3-Labore die folgenden Sicherheitsanforderungen: Laborpraktiken Laboranten stehen unter medizinischer Überwachung und erhalten möglicherweise Immunisierungen für Mikroben, mit denen sie arbeiten. Der Zugang zum Labor ist jederzeit eingeschränkt und kontrolliert. Sicherheitsausrüstung  Es muss geeignete PSA getragen werden, und Atemschutzgeräte können erforderlich seinA. Alle Arbeiten mit Mikroben müssen in einem geeigneten BSCB durchgeführt werden. Anlagenbau In der Nähe des Ausgangs stehen ein Waschbecken und eine Augendusche zur Verfügung. Abluft kann nicht rezirkuliert werden, und das Labor muss über einen kontinuierlichen gerichteten Luftstrom verfügen, indem Luft aus sauberen Bereichen in Richtung potenziell kontaminierter Bereiche in das Labor gezogen wird. Der Zugang zum Labor erfolgt durch zwei Sätze selbstschließender und verriegelbarer TürenC. Biogefährdungsgrad und Bedeutung Biohazard Level 3 umfasst Mikroorganismen, die für Menschen tödlich sein können, für die jedoch Impfstoffe und andere Behandlungen verfügbar sind. Abgesehen von Mycobacterium tuberculosis umfasst diese Gruppe auch Anthrax, viele Arten von viraler Enzephalitis, Hantavirus, Rift-Valley-Fieber, Malaria, Rocky-Mountain-Fleckfieber und Gelbfieber."
+                },
+              }
+          </script>
+    </body>
+    <footer >
+        <p>This site is made by @AmarH for school mini-projects this page will be deactivated in 15 days.</p>
+      </footer>
+</html>

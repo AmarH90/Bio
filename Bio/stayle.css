@@ -1,0 +1,221 @@
+body {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color:black;
+    background-image:url("https://images.pexels.com/photos/15699519/pexels-photo-15699519.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.logo_1 {
+    float: left;
+    height:48px;
+    width:250px;
+}
+.title{
+    text-align:center;
+    font-size: 20px;
+    margin: 25px;
+    object-fit:fill;
+    
+}
+.paragraf_1{
+    padding:  50px;
+}
+.nav {
+    overflow:hidden;
+    background-color:springgreen;
+    position:fixed;
+    top:0;
+    width: 100%;
+}
+
+.nav a  {
+    float:left;
+    display:block;
+    color:black;
+    text-align:center;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+
+.nav :hover {
+    background-color:black;
+    color:chartreuse;
+    cursor:pointer;
+}
+.naslov {
+    margin-left: 10px;
+}
+.main {
+    margin-top: 30px;
+}
+
+.box1 {
+    border-style: inset;
+    border-width:2px;
+    border-color: lawngreen;
+    margin-top: 600px;
+    margin-left: 230px;
+    height: 350px;
+    width: 750px;
+    color:lawngreen;
+    padding: 30px;
+}
+.box2 {
+    border: 2px solid lawngreen;
+    margin-top:100px;
+    margin-bottom:50px;
+    margin-left: 10px;
+    height:610px;
+    width:250px;
+    color:lawngreen;
+    padding:10px;
+   
+}
+.box3 {
+    border-style:inset;
+    border-width: 2px;
+    border-color:lawngreen;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    height:610px;
+    width:250px;
+    color:lawngreen;
+    padding:10px;
+    
+}
+
+.box4 {
+    border:inset;
+    border-width:2px;
+    border-color:lawngreen;
+    margin-top:100px;
+    margin-bottom:50px;
+    height:610px;
+    width:250px;
+    color:lawngreen;
+    padding: 10px;
+    
+}
+.box5 {
+    border:inset;
+    border-width: 2px;
+    border-color: lawngreen;
+    margin-top: 100px;
+    margin-bottom:50px;
+    height:610px;
+    width: 250px;
+    color:lawngreen;
+    padding: 10px;
+    
+}
+img {
+    width: 250px;
+    height:320px;
+    object-fit:cover;
+}
+.master_box {
+    width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+h2 {
+    text-align: center;
+    color: lawngreen;
+}
+
+
+.up_text  {
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 90px;
+    font-size:xx-large;
+    animation: flicker 3.5s infinite alternate;
+    color:black;
+}
+.up_text3 {
+    text-align: center;
+    margin-right: 20px;
+    margin-top:90px;
+    font-size: xx-large;
+    animation: flicker 3.5s infinite alternate;
+    color:black;
+}
+@keyframes flicker {
+      
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      
+        text-shadow:
+        0 0 4px lawngreen,
+        0 0 11px lawngreen,
+        0 0 19px lawngreen,
+        0 0 40px white,
+        0 0 80px white,
+        0 0 90px white,
+        0 0 100px white,
+        0 0 150px white;
+        
+    }
+        
+        20%, 24%, 55% {        
+            text-shadow: none;
+        }    
+    }
+
+.up_text2  {
+        text-align: center;
+        margin-right: 10px;
+        margin-top: 10px;
+        font-size:larger;
+        animation: text1 3.5s infinite alternate;
+        color:black;
+}
+
+    @keyframes text1 {
+      
+        0%, 18%, 22%, 25%, 53%, 57%, 100% {
+          
+            text-shadow:
+            0 0 4px lawngreen,
+            0 0 11px lawngreen,
+            0 0 19px lawngreen,
+            0 0 40px white,
+            0 0 80px white,
+            0 0 90px white,
+            0 0 100px white,
+            0 0 150px white;
+            
+        }
+            
+            20%, 24%, 55% {        
+                text-shadow: none;
+            }    
+        }
+
+footer  {
+    text-align: center;
+    padding: 1px;
+    margin-top: 20px;
+    background-color: springgreen;
+    color: black;
+    display:block;
+    text-decoration:underline;
+    width:100%;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: springgreen;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: springgreen;
+  }
+ 
+
+
+

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html leng="eg-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=divaice-width, initial-scale=1.8">
+        <title>Biohazard</title>
+        <link rel="apple-touch-icon" sizes="100x100" href="../Bio/favicon_bio/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../Bio/favicon_bio/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../Bio/favicon_bio/favicon-16x16.png">
+        <link rel="manifest" href="../Bio/favicon_bio/site.webmanifest">
+        <link rel="stylesheet" href="stayle.css">
+    </head>
+    <header>
+         <div class="nav">
+                    <img class="logo_1" src="../Bio/image/logo_2.jpg">
+                   <a href="bsl-1.html">BSL-1</a></li>
+                    <a href="bsl-2.html">BSL-2</a></li>
+                    <a href="bsl-3.html">BSL-3</a></li>
+                    <a href="bsl-4.html">BSL-4</a></li>
+                    <a href="#" language='english' class="active">English</a></li>
+                    <a href="#" language='bosanski'>Bosnian</a></li>
+                    <a href="#" language='german'>German</a></li>
+        </div>
+        
+     </div>
+    </header>
+    <body>
+     
+         
+
+            <div class="up_text">
+               <p>Biohazard site</p>
+               
+            </div>
+            <div class="box1">
+                 <h2 class="up_text3">Welcome to Biohazard site </h2>
+                 
+                 <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Quisque convallis et lorem malesuada dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel magna id ligula consectetur feugiat.  <br>  Nunc nec laoreet magna. <b>  Vestibulum ultricies rhoncus magna, nec luctus dolor aliquet sed. Praesent posuere nulla commodo, condimentum mi quis, commodo nunc.  </b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque convallis et lorem malesuada dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel magna id ligula consectetur feugiat. Nunc nec laoreet magna. Vestibulum ultricies rhoncus magna, nec luctus dolor aliquet sed. Praesent posuere nulla commodo, condimentum mi quis, commodo nunc. Sed ac vehicula leo, vitae cursus lorem. Maecenas sed lectus vehicula, finibus neque id, dapibus ante. Mauris cursus bibendum orci, in pulvinar erat semper ut. Vivamus lacus erat, fermentum non dictum at, blandit sit amet odio. Aenean dictum sollicitudin massa, at accumsan mauris. </p>
+            </div>
+       
+              <div class="master_box">
+                <div class="box2">
+                  <h2 class="up_text2">BSL-1</h2>
+                   <p class="description_1">Biohazard level 1: Quisque a ante lacus. Etiam ut scelerisque justo. Phasellus placerat enim vitae dictum lacinia. Nam condimentum lectus eget risus finibus, cursus auctor libero imperdiet. Aenean pharetra lorem non arcu mattis, ut dapibus augue rutrum. Nunc ac odio nec ante efficitur pharetra. Aliquam eleifend ex ultrices ante maximus congue. </p><br><img  src="../Bio/image/bsl-1.jpg">
+                </div>
+              <div class="box3">
+                  <h2 class="up_text2">BSL-2</h2>
+                  <p class="description_2">Biohazard level 2: Quisque a ante lacus. Etiam ut scelerisque justo. Phasellus placerat enim vitae dictum lacinia. Nam condimentum lectus eget risus finibus, cursus auctor libero imperdiet. Aenean pharetra lorem non arcu mattis, ut dapibus augue rutrum. Nunc ac odio nec ante efficitur pharetra. Aliquam eleifend ex ultrices ante maximus congue.   </p><br><img src="../Bio/image/bsl-2.1.jpg">
+              </div>
+              <div class="box4">
+                  <h2 class="up_text2">BSL-3</h2>
+                  <p class="description_3">Biohazard level 3: Fusce ultrices gravida massa vel sodales. Duis sit amet enim eu tortor consectetur porta non sed est. Aliquam erat volutpat. Vivamus tincidunt sapien egestas, suscipit lorem ornare, sodales magna. Vivamus ornare bibendum sollicitudin. Vivamus vitae blandit sem. Nunc scelerisque ante ut tortor rutrum varius.  </p><br><br><img src="./image/bsl-3.1.jpg">
+              </div>
+              <div class="box5">
+                  <h2 class="up_text2">BSL-4</h2>
+                  <p class="description_4">Biohazard level 4: Fusce sollicitudin sagittis ligula, non dapibus mauris porttitor sit amet. Fusce venenatis tortor non ligula sagittis, ut dictum elit sagittis. Donec ac risus mauris. Donec tempor ac ipsum eget vestibulum. Vivamus convallis lacus sed varius porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget orci metus. </p><img src="../Bio/image/bsl-4.1.jpg">
+              </div>
+        </div>
+       
+
+
+      
+      <script>
+        const langEl = document.querySelector('.nav');
+        const link = document.querySelectorAll('a');
+        const up_text3El = document.querySelector('.up_text3');
+        const descriptionEl = document.querySelector('.description');
+        const description_1El = document.querySelector('.description_1');
+        const description_2El = document.querySelector('.description_2')
+        const description_3El = document.querySelector('.description_3')
+        const description_4El = document.querySelector('.description_4') 
+        link.forEach(el => {
+          el.addEventListener('click', () => {
+            langEl.querySelector('.active').classList.remove('active');
+            el.classList.add('active');
+    
+            const attr = el.getAttribute('language');
+    
+            up_text3El.textContent = data[attr].up_text3;
+            descriptionEl.textContent = data[attr].description;
+            description_1El.textContent = data[attr].description_1;
+            description_2El.textContent = data[attr].description_2;
+            description_3El.textContent = data[attr].description_3;
+            description_4El.textContent = data[attr].description_4;
+          });
+        });
+        
+        var data = {
+            "english": 
+            {
+              "up_text3": "Welcome to Biohazard site",
+              "description": 
+                "On this page you  will find out  about  variety of world wide diseases which are  dangerous to the human race also how we fight against them.<br> First of all  whot is a biohazard  what makes biohazard so  dangerous to the  humas. <br>Biohazards are defined as any biological or chemical substance that is dangerous to humans, animals, or the environment. fluids, human tissue and blood, and recombinant DNA. Because biohazards have the potential to infect anyone who is exposed to them, all human waste should be properly handled and disposed of.  Whot is a  BSL whoa it  means BSL stands for (Biosafety level)  the  higher number  higher  the dangero",
+              "description_1":
+                "Biohazard level 1: Agents that do not generally cause disease in healthy humans. An example of a level 1 biohazard would be bacillus subtilis, a soil bacterium that can sometimes cause illness in individuals with weakened immune systems.",
+              "description_2":
+                "Biohazard level 2: These agents can cause severe illness in healthy humans, but can only cause infection through direct contact with infected material or through ingestion. Examples of a level 2 biohazard are HIV, salmonella, and hepatitis B.",
+              "description_3":
+                "Biohazard level 3: Pathogens that cause serious diseases and can become airborne. An example of a level 3 biohazard would be tuberculosis, a lung disease that can be passed from person to person through the air.",
+              "description_4":
+                "Biohazard level 4: Pathogens that cause diseases for which there are no treatments. An example of a level 4 biohazard would be marburg virus, a fatal form of hemorrhagic fever that is transmitted through direct contact with infected body fluids or contaminated objects."
+              
+            },
+            "bosanski": 
+            {
+              "up_text3": "Dobro dosli na  Biohzard stranicu",
+              "description": 
+                "Na ovoj stranici ćete saznati o raznim bolestima širom svijeta koje su opasne po ljudski rod i kako se borimo protiv njih. Prije svega, ko je biohazard, šta biohazard čini toliko opasnim za ljude.Biohazardi se definišu kao svaka biološka ili hemijska supstanca koja je opasna za ljude, životinje ili životnu sredinu. tečnosti, ljudsko tkivo i krv i rekombinantna DNK. Budući da biološke opasnosti imaju potencijal da zaraze svakoga ko im je izložen, sav ljudski otpad treba pravilno rukovati i zbrinuti. Tko je BSL, to znači da BSL označava (nivo biosigurnosti) što je veći broj veća je opasnost",
+              "description_1":
+                "Nivo biološke opasnosti 1: Sredstva koja generalno ne izazivaju bolest kod zdravih ljudi. Primjer biološke opasnosti nivoa 1 bi bio bacillus subtilis, bakterija u tlu koja ponekad može uzrokovati bolest kod osoba sa oslabljenim imunološkim sistemom.",
+              "description_2":
+                "Nivo biološke opasnosti 2: Ovi agensi mogu uzrokovati teške bolesti kod zdravih ljudi, ali mogu uzrokovati infekciju samo direktnim kontaktom sa zaraženim materijalom ili gutanjem. Primjeri nivoa 2 biološke opasnosti su HIV, salmonela i hepatitis B.",
+              "description_3":
+                "Nivo biološke opasnosti 3: Patogeni koji uzrokuju ozbiljne bolesti i mogu se prenositi zrakom. Primjer biološke opasnosti nivoa 3 bi bila tuberkuloza, bolest pluća koja se može prenijeti s osobe na osobu putem zraka.",
+              "description_4":
+                "Nivo biološke opasnosti 4: Patogeni koji uzrokuju bolesti za koje ne postoje tretmani. Primjer biološke opasnosti nivoa 4 bio bi virus Marburg, smrtonosni oblik hemoragijske groznice koja se prenosi direktnim kontaktom sa zaraženim tjelesnim tekućinama ili kontaminiranim predmetima."
+            },
+            "german": 
+            {
+              "up_text3": "Wellcommen zu Biogefährdung Seite",
+              "description": 
+                "Auf dieser Seite erfahren Sie mehr über verschiedene Krankheiten auf der ganzen Welt, die für die Menschheit gefährlich sind, und wie wir sie bekämpfen. Zunächst einmal, wer ist ein Biohazard, was macht einen Biohazard so gefährlich für den Menschen Biohazards sind definiert als jede biologische oder chemische Substanz, die für Menschen, Tiere oder die Umwelt gefährlich ist. Flüssigkeiten, menschliches Gewebe und Blut und rekombinante DNA. Da Biogefährdungen potenziell jeden infizieren können, der ihnen ausgesetzt ist, sollten alle menschlichen Abfälle ordnungsgemäß gehandhabt und entsorgt werden. Wer BSL ist, bedeutet, dass BSL für (Biosafety Level) steht, je höher die Zahl, desto größer die Gefahr",
+              "description_1":
+                "Biogefährdungsstufe 1: Stoffe, die bei gesunden Menschen im Allgemeinen keine Krankheiten verursachen. Ein Beispiel für eine Biogefährdung der Stufe 1 wäre Bacillus subtilis, ein Bodenbakterium, das bei Personen mit geschwächtem Immunsystem manchmal Krankheiten verursachen kann.",
+              "description_2":
+                "Biogefährdungsstufe 2: Diese Mittel können bei gesunden Menschen schwere Erkrankungen hervorrufen, können jedoch nur durch direkten Kontakt mit infiziertem Material oder durch Verschlucken eine Infektion verursachen. Beispiele für eine Biogefährdung der Stufe 2 sind HIV, Salmonellen und Hepatitis B.",
+              "description_3":
+                "Biogefährdungsstufe 3: Krankheitserreger, die schwere Krankheiten verursachen und in die Luft gelangen können. Ein Beispiel für eine Biogefährdung der Stufe 3 wäre Tuberkulose, eine Lungenkrankheit, die von Mensch zu Mensch über die Luft übertragen werden kann.",
+              "description_4":
+                "Biogefährdungsstufe 4: Krankheitserreger, die Krankheiten verursachen, für die es keine Behandlung gibt. Ein Beispiel für eine Biogefährdung der Stufe 4 wäre das Marburgvirus, eine tödliche Form des hämorrhagischen Fiebers, das durch direkten Kontakt mit infizierten Körperflüssigkeiten oder kontaminierten Gegenständen übertragen wird."
+            },
+          }
+      </script>
+    </body>
+    <footer >
+      <p> This site is made by @AmarH for school mini-projects </p>
+    </footer>
+</html>
